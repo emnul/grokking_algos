@@ -1,4 +1,19 @@
 {
-  "name": "grokking_algos",
-  "packageManager": "yarn@4.9.1"
+  "name": "grokking-algos",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.3"
+  },
+  "packageManager": "yarn@4.9.1",
+  "engines": {
+    "node": ">=18"
+  }
 }
