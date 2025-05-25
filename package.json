@@ -7,9 +7,12 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint"
+    "test": "turbo run test",
+    "format-and-lint": "biome check . --staged",
+    "format-and-lint:fix": "biome check . --write --staged"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "turbo": "^2.5.3"
   },
   "packageManager": "yarn@4.9.1",
